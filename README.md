@@ -1,8 +1,22 @@
 
-# 🚀 CPDETECH – Space Station Object Detection using YOLOv8  
+# 🚀 CODETECH – Space Station Object Detection using YOLOv8  
 **BuildWithIndia2.0 Hackathon – Duality AI | Falcon Digital Twin**
 
-![Results](model_weights/train2/results.png)
+## 📸 Model Evaluation Visuals
+
+Below are some result snapshots from our top-performing YOLOv8 models:
+
+### 🔹 `train2`
+![Results - train2](model_weights/train2/results.png)  
+![Confusion Matrix - train2](model_weights/train2/confusion_matrix.png)
+
+### 🔹 `train4` – 🏆 Best Performance
+![Results - train4](model_weights/train4/results.png)  
+![Confusion Matrix - train4](model_weights/train4/confusion_matrix.png)
+
+### 🔹 `train5`
+![Results - train5](model_weights/train5/results.png)  
+![Confusion Matrix - train5](model_weights/train5/confusion_matrix.png)
 
 ---
 
@@ -19,7 +33,7 @@
 
 ## 📌 Project Overview
 
-**CPDETECH** is a high-performance object detection system designed for synthetic space station environments using Falcon’s digital twin data. The model detects:
+**CODETECH** is a high-performance object detection system designed for synthetic space station environments using Falcon’s digital twin data. The model detects:
 
 - 🔧 Toolbox  
 - 🧯 Fire Extinguisher  
@@ -32,29 +46,32 @@ The solution was trained using YOLOv8 with rigorous tuning and validation across
 ## 📁 Project Structure
 
 ```
-├── CODETECH.ipynb                # Training and Evaluation Notebook From Goggle - Colab
-├── code/                         # Training scripts and utilities Includein
+├── CODETECH.ipynb                # Training and Evaluation Notebook From Google Colab
+├── code/                         # Training scripts and utilities
 ├── model_weights/                # Checkpoints and Evaluation Outputs
+│   ├── train/                    # Baseline results
 │   ├── train2/                   # Best model results
-│   │   ├── results.png
-│   │   ├── confusion_matrix.png
-│   │   ├── weights/              # Trained .pt files
+│   ├── train4/                   # Best performing model
+│   ├── train5/                   # Slight overfit model
 │   └── val/                      # Validation predictions
-    
 ```
 
 ---
+
 ## 📊 Training Results Summary
 
 We trained over **40 models** to optimize performance. Below are the top 5 best-performing models:
 
-| Model Name | Train Accuracy (%) | Prediction Accuracy (mAP@0.5) (%) | Notes                          |
-|------------|--------------------|----------------------------------|--------------------------------|
-| `train`   | 95.3               | 89.2                             | Baseline training              |
-| `train2`   | 95.1               | 88.9                             | Improved with better mosaic    |
-| `train3`  | 88.2               | 85.4                             | Tuned learning rate            |
-| `train4`  | **95.8**           | **89.7**                         | 🏆 Best overall performance     |
-| `train5` | 95.1               | 88.5                             | Focused on critical targets    |
+| Model Name | Train Accuracy (%) | Prediction Accuracy (mAP@0.5) (%) | Notes                        |
+|------------|--------------------|----------------------------------|------------------------------|
+| `train`    | 95.3               | 89.2                             | Baseline training            |
+| `train2`   | 95.1               | 88.9                             | Improved mosaic augmentation |
+| `train3`   | 88.2               | 85.4                             | Less efficient               |
+| `train4`   | **95.8**           | **89.7**                         | 🏆 Best overall performance   |
+| `train5`   | 96.1               | 88.5                             | Slight overfitting observed  |
+
+---
+
 ## 🧠 Model Architecture
 
 The project utilizes **YOLOv8**'s transformer-based detection architecture optimized with custom hyperparameters like learning rate, mosaic augmentations, and AdamW optimizer.
@@ -80,6 +97,7 @@ You can find all trained weights inside the `model_weights/` folder.
 Check `CODETECH.ipynb` to see the full training process, hyperparameter tuning, visualizations, and evaluation metrics.
 
 ---
+
 ## 📈 Visual Results
 
 | Preview                      | File Path                                    |
@@ -88,7 +106,8 @@ Check `CODETECH.ipynb` to see the full training process, hyperparameter tuning, 
 | 🔲 Confusion Matrix         | `model_weights/train2/confusion_matrix.png`   |
 | 📸 Training Batches         | `model_weights/train2/train_batch0.jpg`       |
 | 🧪 Validation Predictions    | `model_weights/train2/val_batch0_pred.jpg`    |
-The project utilizes **YOLOv8**'s transformer-based detection architecture optimized with custom hyperparameters like learning rate, mosaic augmentations, and AdamW optimizer.
+
+---
 
 ## ⚙️ Usage Instructions
 

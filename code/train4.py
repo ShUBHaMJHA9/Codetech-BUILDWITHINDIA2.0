@@ -17,7 +17,7 @@
   NOTE         : This project uses YOLOv8 for object detection and has been evaluated using mAP, precision, recall,
                  and visual validation from the Falcon dataset. All scripts, models, and visualizations are organized
                  for easy reproducibility and deployment.
-
+                 WE USE ONLY EPOCHS = 30 If WE USE MORE THAN OUR MODEL GIVE BETTER ACCURACY DEFINATILY
 -------------------------------------------------------
 """
 
