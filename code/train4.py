@@ -1,3 +1,27 @@
+"""
+-------------------------------------------------------
+  PROJECT NAME : CPDETECH – Space Station Object Detection using YOLOv8
+  HACKATHON    : BuildWithIndia2.0 by Duality AI
+  TEAM NAME    : CODETECH
+  DESCRIPTION  : AI-powered object detection system trained using Falcon synthetic space station data.
+
+  TEAM MEMBERS :
+    - Shubham Kumar Jha (Team Leader) - @ShUBHaMJHA9
+    - Rajat Gupta
+    - Madhav
+    - Anjili Sharma
+
+  REPO LINK    : https://github.com/ShUBHaMJHA9/Codetech-BUILDWITHINDIA2.0
+  DATE         : August 2025
+
+  NOTE         : This project uses YOLOv8 for object detection and has been evaluated using mAP, precision, recall,
+                 and visual validation from the Falcon dataset. All scripts, models, and visualizations are organized
+                 for easy reproducibility and deployment.
+
+-------------------------------------------------------
+"""
+
+
 import argparse
 import os
 import cv2
