@@ -53,7 +53,7 @@ We trained over **40 models** to optimize performance. Below are the top 5 best-
 | `train`   | 95.3               | 89.2                             | Baseline training              |
 | `train2`   | 95.1               | 88.9                             | Improved with better mosaic    |
 | `train3`  | 88.2               | 85.4                             | Tuned learning rate            |
-| `train4`  | **95.7**           | **89.7**                         | 🏆 Best overall performance     |
+| `train4`  | **95.8**           | **89.7**                         | 🏆 Best overall performance     |
 | `train5` | 95.1               | 88.5                             | Focused on critical targets    |
 ## 🧠 Model Architecture
 
