@@ -102,10 +102,10 @@ Check `CODETECH.ipynb` to see the full training process, hyperparameter tuning, 
 
 | Preview                      | File Path                                    |
 |-----------------------------|-----------------------------------------------|
-| 📉 Loss / mAP Curve         | `model_weights/train2/results.png`            |
-| 🔲 Confusion Matrix         | `model_weights/train2/confusion_matrix.png`   |
-| 📸 Training Batches         | `model_weights/train2/train_batch0.jpg`       |
-| 🧪 Validation Predictions    | `model_weights/train2/val_batch0_pred.jpg`    |
+| 📉 Loss / mAP Curve         | `model_weights/train4/results.png`            |
+| 🔲 Confusion Matrix         | `model_weights/train4/confusion_matrix.png`   |
+| 📸 Training Batches         | `model_weights/train4/train_batch0.jpg`       |
+| 🧪 Validation Predictions    | `model_weights/train4/val_batch0_pred.jpg`    |
 
 ---
 
@@ -126,14 +126,14 @@ python train.py
 ### 🔍 Prediction
 
 ```bash
-python predict.py --weights model_weights/train2/weights/best.pt
+python predict.py --weights model_weights/train4/weights/best.pt
 ```
 
 ---
 
 ## 📄 Report
 
-📥 [SMARTCROWD_Hackathon_Report.pdf](./SMARTCROWD_Hackathon_Report.pdf)
+📥 [CODETECH_Hackathon_Report.pdf](./CODETECH_Hackathon_Report.pdf)
 
 ---
 
